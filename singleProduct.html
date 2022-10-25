@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Product</title>
+
+    <!-- swiper cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- global -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/singleProduct.css" />
+
+    <!-- lightslider -->
+    <link rel="stylesheet" href="./css/lightslider.css" />
+
+    <!-- script -->
+    <script src="./js/jQuery-3.6.1.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="header">
+        <div class="header_left border">
+          <div class="logo d-100 m-2">LOGO</div>
+          <ul class="nav_items m-2">
+            <li><a href="#">nav_1</a></li>
+            <li><a href="#">nav_2</a></li>
+            <li><a href="#">nav_3</a></li>
+            <li><a href="#">nav_4</a></li>
+          </ul>
+        </div>
+
+        <div class="header_right border">
+          <ul class="right_nav_items m-2">
+            <li><a href="#">login</a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+
+          <button class="btn m-2">Add property</button>
+        </div>
+      </div>
+      <!-- end header -->
+
+      <!-- somethin -->
+      <section class="p-2 border mt-2">
+        <div class="section_title"><h1>some title here</h1></div>
+        <div class="grid-container mt-2">
+          <!-- Swiper -->
+          <div class="grid-items item_one">
+            <div class="swiper mySwiper">
+              <div class="swiper mySwiper">
+                <div class="wrap swiper-wrapper">
+                  <div class="image-holder swiper-slide">
+                    <img
+                      src="./assets/wireframes/placeholders/ph1.jpg"
+                      alt=""
+                      class="grid-image_main"
+                    />
+                  </div>
+                  <div class="image-holder swiper-slide">
+                    <img
+                      src="./assets/wireframes/placeholders/ph1.jpg"
+                      alt=""
+                      class="grid-image_main"
+                    />
+                  </div>
+                  <div class="image-holder swiper-slide">
+                    <img
+                      src="./assets/wireframes/placeholders/ph1.jpg"
+                      alt=""
+                      class="grid-image_main"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-items item-two">
+            <img
+              class="small-gallary-image"
+              src="./assets/wireframes/placeholders/ph3.jpg"
+              alt=""
+            />
+            <div class="caption"><p>something1</p></div>
+          </div>
+          <div class="grid-items item-three">
+            <img
+              class="small-gallary-image"
+              src="./assets/wireframes/placeholders/ph3.jpg"
+              alt=""
+            />
+            <div class="caption"><p>something1</p></div>
+          </div>
+          <div class="grid-items item-four">
+            <img
+              class="small-gallary-image"
+              src="./assets/wireframes/placeholders/ph3.jpg"
+              alt=""
+            />
+            <div class="caption"><p>something1</p></div>
+          </div>
+          <div class="grid-items item-five">
+            <img
+              class="small-gallary-image"
+              src="./assets/wireframes/placeholders/ph3.jpg"
+              alt=""
+            />
+            <div class="caption"><p>something1</p></div>
+          </div>
+          <div class="grid-items item-five"></div>
+          <div class="grid-items item-five"></div>
+          <div class="grid-items item-five">
+            <div class="item-below">
+              <span class="price">100cedis</span>
+              <span class="price">100cedis</span>
+            </div>
+          </div>
+          <div class="grid-items1 item-six">
+            <button class="btn-gallary">View more details</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="description-wrapper">
+        <div class="tabs-container">
+          <h1>something goes here</h1>
+          <div class="tab mt-2">
+            <button class="tablinks" onclick="openCity(event,'London')">
+              london
+            </button>
+            <button class="tablinks" onclick="openCity(event,'Paris')">
+              Paris
+            </button>
+            <button class="tablinks" onclick="openCity(event,'Tokyo')">
+              Tokyo
+            </button>
+          </div>
+
+          <div id="London" class="tabcontent">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+          </div>
+
+          <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital city of England.</p>
+          </div>
+
+          <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital city of England.</p>
+          </div>
+        </div>
+        <div class="right-section"></div>
+      </div>
+
+      <!-- footer area -->
+      <footer class="border p-2 mt-2">
+        <div class="footer_itmes mt-2">
+          <div class="footer_profile">
+            <h3>company profile</h3>
+            <p class="mt-2">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ab
+              repellat temporibus molestias recusandae, voluptatem maxime ullam
+              aspernatur laudantium molestiae. Dolorem nesciunt quod tempora
+              facere eum, non sit sapiente itaque!
+            </p>
+          </div>
+          <div class="footer_menu">
+            <h3>site links</h3>
+            <div class="footer_list mt-2">
+              <ul class="">
+                <li><a href="#">f-item1</a></li>
+                <li><a href="#">f-item1</a></li>
+                <li><a href="#">f-item1</a></li>
+                <li><a href="#">f-item1</a></li>
+                <li><a href="#">f-item1</a></li>
+              </ul>
+              <ul class="">
+                <li><a href="#">f-item1</a></li>
+                <li><a href="#">f-item1</a></li>
+                <li><a href="#">f-item1</a></li>
+                <li><a href="#">f-item1</a></li>
+                <li><a href="#">f-item1</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_contact">
+            <h3>contact us</h3>
+            <p class="mt-2"><b>Address:</b> 123 dome faase st</p>
+            <p><b>Phone:</b>020 636 2142</p>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer area -->
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
+    <script src="./js/script2.js"></script>
+  </body>
+</html>
